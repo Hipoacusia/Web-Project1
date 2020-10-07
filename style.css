@@ -1,0 +1,423 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+article{
+    text-align: center;
+    margin: auto;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-image: url(https://i.pinimg.com/originals/6a/d7/a9/6ad7a9f81e3a3d0a658edde249359142.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.Cartas{
+    margin-top: 50px;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+}
+
+.card-body{
+    margin-bottom: 50px;
+}
+
+aside{
+    margin-top: 15px;
+}
+
+aside h2{
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.gallery-items{
+    position: relative;
+}
+
+.gallery__title{
+    position: absolute;
+    bottom: 0;
+    color: aliceblue;
+    background:linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.5));
+    width: 100%;
+    margin: 0;
+}
+
+.gallery-items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-items:nth-child(4){
+    grid-column-start: span 2;
+}
+
+.gallery-items:nth-child(5){
+    grid-row-start: span 2;
+}
+
+.gallery-items:nth-child(9){
+    grid-column-start: span 2;
+}
+
+@media (min-width:768px){
+    .gallery-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gallery-items:nth-child(3){
+        grid-column-start: span 2;
+    }
+
+    .gallery-items:nth-child(4){
+        grid-column-start: span 2;
+    }
+    
+    .gallery-items:nth-child(5){
+        grid-row-start: span 2;
+    }
+
+    .gallery-items:nth-child(6){
+        grid-row-start: span 2;
+    }
+    
+    .gallery-items:nth-child(9){
+        grid-column-start: span 4;
+    }
+    
+}
+
+@media (min-width:900px){
+    .gallery-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gallery-items:nth-child(3){
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .gallery-items:nth-child(4){
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    
+    .gallery-items:nth-child(5){
+        grid-row-start: span 2;
+    }
+
+    .gallery-items:nth-child(6){
+        grid-row-start: span 2;
+    }
+    
+    .gallery-items:nth-child(9){
+        grid-column-start: span 4;
+        grid-row-start: span 2;
+    }
+    
+}
+
+section{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.title2{
+    padding: 20px;
+}
+
+.Button_light{
+    display: flex;
+    text-align: center;
+    background: #031321;
+    color: #2196f3;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+}
+
+.ButtonY{
+    color: #f3ec21;
+}
+
+.Buttonl, .ButtonY{
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.Buttonl:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.ButtonY:hover{
+    color: #848125;
+    background: #f3ec21;
+    box-shadow: 0 0 10px #f3ec21, 0 0 40px #f3ec21, 0 0 80px #f3ec21;
+    transition-delay: 1s;
+}
+
+
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.ButtonY span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#f3ec21);
+}
+
+.ButtonY:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+.ButtonY span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#f3ec21);
+}
+
+.ButtonY:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+}
+
+.ButtonY span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f3ec21);
+}
+
+.ButtonY:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.ButtonY span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f3ec21);
+}
+
+.ButtonY:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.Rings{
+    width: 100%;
+    height: 400px;
+    background: #031321;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.ring{
+    background-color: #eeccee;
+    position: relative;
+    margin: auto;
+    box-shadow:
+        -10px -10px 15px rgba(255, 255, 255,0.3 ),
+        10px 10px 15px rgba(70, 70, 70, 0.15),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.3),
+        inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+    border: 15px solid #eeccee;    
+    border-radius: 50%;
+}
+
+.ring4{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    top: -475px;
+    animation: glow4 2.5s infinite;
+}
+
+@keyframes glow4{
+    0%{
+        background-color: #eeccec;
+    }
+    20%{
+        background-color: #2196f3;
+    }
+    100%{
+        background-color: #2196f3;
+    }
+}
+
+.ring3{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    top: -400px;
+    animation: glow3 2.5s infinite;
+}
+
+@keyframes glow3{
+    20%{
+        background-color: #eeccec;
+    }
+    40%{
+        background-color: #2196f3;
+    }
+    100%{
+        background-color: #2196f3;
+    }
+}
+
+.ring2{
+    position:relative;
+    height: 200px;
+    width: 200px;
+    animation: glow2 2.5s infinite;
+    top: -240px;
+}
+
+@keyframes glow2{
+    40%{
+        background-color: #eeccec;
+    }
+    60%{
+        background-color: #2196f3;
+    }
+    100%{
+        background-color: #2196f3;
+    }
+}
+
+.ring1{
+    position: relative;
+    height: 280px;
+    width: 280px;
+    animation: glow1 2.5s infinite;
+}
+
+@keyframes glow1{
+    60%{
+        background-color: #eeccee;
+    }
+    80%{
+        background-color: #2196f3;
+    }
+    100%{
+        background-color: #2196f3;
+    }
+}
+
+footer{
+    text-align: center;
+}
+
+footer h2{
+    margin-top: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.Footer{
+    display: grid;
+    background: url(https://data.1freewallpapers.com/download/night-city-buildings-aerial-view-metropolis-lights.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    grid-template-columns: repeat(3.1fr);
+}
+
+.Red{
+    font-size: 30px;
+    color: white;
+}
+
+.IconR{
+    width: 35px;
+    height: 35px;
+}
